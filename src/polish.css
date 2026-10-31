@@ -1,0 +1,106 @@
+:root{color:#153e27;background:#f5f5ef;font-family:"Avenir Next",Avenir,"Segoe UI",sans-serif}
+button{cursor:pointer;transition:filter .18s,transform .18s}button:hover{filter:brightness(.95)}button:active{transform:translateY(1px)}
+button:focus-visible,a:focus-visible{outline:3px solid #6b993b;outline-offset:3px}
+.design-system-page{max-width:1500px;padding:48px 56px 88px}
+.page-header{max-width:none;margin:0 0 40px;align-items:center;padding-bottom:36px;border-bottom:1px solid #dce1d5}
+.page-header h1{font-size:clamp(42px,4.5vw,64px);font-weight:500;line-height:1.05;letter-spacing:-.055em;max-width:700px}
+.eyebrow{font-size:9px;letter-spacing:.16em;font-weight:650;color:#64735f}
+.page-header .eyebrow{margin-bottom:20px}
+.page-lede{font-size:14px;line-height:1.65;max-width:480px;color:#6d796a}
+.token-note{background:transparent;padding:0;gap:8px;grid-template-columns:repeat(3,24px)}
+.token-dot{width:24px;height:24px}.token-note small{padding-top:8px;font-size:10px}
+.section-intro h2{font-size:26px;font-weight:500;letter-spacing:-.04em}
+.section-intro p:not(.eyebrow){font-size:13px;color:#7a8276;margin-top:8px}
+.reference-section{max-width:none;margin-bottom:56px}
+.device-stage{padding:32px 24px;background:#e8ecdf;border:1px solid #dfe5d6;border-radius:8px;gap:28px;grid-template-columns:350px minmax(0,1fr);align-items:center}
+.device{position:relative;margin-top:24px;padding:9px;background:#233026;border-radius:36px;box-shadow:0 2px 0 #64705e inset,0 20px 32px -24px #172e24,0 0 0 1px #18271b}
+.device-label{color:#64735f;position:absolute;top:-24px;left:2px;font-size:9px;font-weight:500;letter-spacing:.13em}
+.app-shell{border-radius:28px;background:#eef1e7}
+.device--tablet{border-radius:25px}.device--tablet .app-shell{border-radius:17px;min-height:640px}
+.app-header{background:#153e27;padding:20px 18px 24px;gap:9px}
+.brand-mark{width:34px;height:34px}.search-pill{background:#2c603c;font-size:10px;padding:10px 12px}
+.avatar{background:#e5efdb;font-size:12px;border:3px solid #39774b}
+.dashboard{border-radius:24px 24px 0 0;background:#eef1e7;position:relative;margin-top:-12px;padding:22px 18px 80px}
+.dashboard-title .eyebrow{display:none}.dashboard-title h2{font-size:24px;font-weight:650}
+.button--primary{background:#2d793b;font-weight:550;font-size:11px;padding:11px 15px}
+.metrics-grid{gap:10px}.metric-card{border:0;border-radius:17px;padding:16px;min-height:136px}
+.metric-card__top{position:relative}.metric-label{font-size:11px;font-weight:550;white-space:nowrap;padding-right:26px}
+.metric-card strong{font-size:29px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.metric-icon{position:absolute;right:-6px;top:-6px;width:29px;height:29px;border:0;border-radius:50%}
+.metric-icon svg{width:16px;height:16px;stroke-width:1.8}.info-dot{display:none}
+.metric-change{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:9px;margin-top:12px}
+.change-pill{font-weight:500;font-size:10px;padding:3px 6px}
+.analytics-card{border-radius:17px;padding:18px;margin-top:12px}
+.analytics-head .eyebrow{display:none}.analytics-head h3{font-size:14px;font-weight:600;letter-spacing:-.025em}
+.analytics-head{align-items:center;gap:8px}.analytics-actions{gap:5px}
+.filter-button{font-size:9px;font-weight:500;padding:7px 9px}.icon-button{width:28px;padding:5px}
+.analytics-stats{border-bottom:1px solid #edf0e8;padding-bottom:18px;margin:20px 0 12px;gap:24px;font-size:11px}
+.analytics-stats b{font-size:14px;font-weight:600}
+.chart{min-height:135px}.chart-wrap{padding-left:30px}.chart path:first-of-type{fill:#eff8dc}.chart path:nth-of-type(3){opacity:.22}
+.bottom-nav{left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:calc(100% - 24px);padding:6px;bottom:16px;background:#2d793b;box-shadow:0 4px 12px #153e2712}
+.bottom-nav a{font-size:10px;padding:10px;min-height:38px}.bottom-nav a:not(.active) span{display:none}.bottom-nav svg{stroke-width:1.8}
+.app-shell--compact{min-height:660px}
+.app-shell--compact .dashboard-title{flex-direction:row;align-items:center}
+.app-shell--compact .dashboard-title h2{font-size:22px}
+.app-shell--compact .button--primary{font-size:0;padding:10px;border-radius:50%;align-self:auto}
+.app-shell--compact .button--primary svg{width:18px;height:18px}
+.app-shell--compact .metric-card{min-height:126px;padding:14px}
+.app-shell--compact .metric-card strong{font-size:23px}
+.app-shell--compact .metric-icon{width:25px;height:25px;border:0}
+.app-shell--compact .metric-label{font-size:10px}
+.app-shell--compact .metric-change{display:flex;gap:4px}
+.app-shell--compact .metric-change>span{font-size:8px}
+.app-shell--compact .analytics-head{display:flex}
+.app-shell--compact .analytics-actions{margin:0}
+.app-shell--compact .analytics-head h3{font-size:13px}
+.app-shell--compact .analytics-actions .icon-button{display:none}
+.app-shell--compact .analytics-stats{gap:10px;flex-wrap:wrap}
+.app-shell--compact .bottom-nav{left:50%;right:auto;bottom:16px}
+.token-grid{gap:0;border-top:1px solid #dce1d5;border-bottom:1px solid #dce1d5}
+.token-card{background:none;border-radius:0;padding:22px 12px;border-right:1px solid #dce1d5}.token-card:last-child{border:0}
+.token-card b{font-size:13px;font-weight:550}.token-card small{font-size:10px}
+.swatch{flex-shrink:0;border-radius:50%;width:32px;height:32px}
+@media(max-width:1150px){.design-system-page{padding:40px 24px}.device-stage{grid-template-columns:330px minmax(0,1fr);padding:28px 16px;gap:18px}.device--tablet .analytics-head{flex-wrap:wrap}.device--tablet .dashboard-title .button{font-size:0;padding:10px}.device--tablet .metric-label{font-size:10px}}
+@media(max-width:850px){.device-stage{grid-template-columns:1fr;gap:52px;padding:40px 24px}.device--phone{width:350px;max-width:100%;justify-self:center}.device--tablet{order:0;width:100%}.token-grid{grid-template-columns:repeat(2,1fr)}.page-header{display:flex}.token-note{display:none}}
+@media(max-width:500px){.design-system-page{padding:28px 16px}.device-stage{padding:32px 10px}.page-header h1{font-size:42px}.page-header{margin-bottom:32px}.section-intro h2{font-size:25px}.device--tablet .dashboard-title{flex-direction:row}.token-card{border:0}.token-grid{grid-template-columns:1fr}.device--tablet .analytics-stats{flex-wrap:wrap}.device--tablet .metric-change{font-size:8px}}
+
+/* Floating navigation: preserve a readable active label on the phone preview. */
+.bottom-nav,
+.app-shell--compact .bottom-nav {
+  width: calc(100% - 32px);
+  max-width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  padding: 6px;
+}
+.bottom-nav a,
+.app-shell--compact .bottom-nav a {
+  flex: 0 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 40px;
+  padding: 0;
+  font-size: 0;
+}
+.bottom-nav a.active,
+.app-shell--compact .bottom-nav a.active {
+  flex: 1 1 auto;
+  gap: 7px;
+  padding: 0 12px;
+  font-size: 11px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.bottom-nav a svg,
+.app-shell--compact .bottom-nav a svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+@media(max-width:370px) {
+  .bottom-nav a, .app-shell--compact .bottom-nav a { flex-basis: 32px; min-width: 32px; }
+  .bottom-nav a.active, .app-shell--compact .bottom-nav a.active { padding: 0 8px; font-size: 10px; }
+}

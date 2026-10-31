@@ -1,0 +1,9 @@
+.account-coaching{min-height:108px;align-items:center;gap:14px;padding:18px;background:#0d3020;color:#fff;border-radius:16px}
+.account-coaching>div:first-child{min-width:0;flex:1}
+.account-coaching>div>span{display:block;color:#c4d9c5;font-size:10px;letter-spacing:0;font-weight:500}
+.account-coaching h2{font-size:18px;line-height:1.2;letter-spacing:-.035em;margin:7px 0 0;color:#fff}
+.account-coaching h2 br{display:none}
+.account-coaching p{margin:5px 0 0;color:#c4d9c5;font-size:10px;line-height:1.4}
+.account-coaching button{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;padding:0 14px;border:0;border-radius:999px;background:#168c43;color:#fff;font-size:11px;font-weight:700;white-space:nowrap}
+.account-illustration{display:none}
+@media(max-width:360px){.account-coaching{padding:14px;gap:8px}.account-coaching h2{font-size:16px}.account-coaching button{padding:0 10px;font-size:10px}}

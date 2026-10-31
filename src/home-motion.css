@@ -1,0 +1,125 @@
+/* A short, staggered arrival; content remains visible without animation. */
+@media (prefers-reduced-motion: no-preference) {
+  /* Home tab */
+  .account-home .account-heading,
+  .account-home .account-score,
+  .account-home .account-actions button,
+  .account-home .account-section,
+  .account-home .trip-row {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) both;
+  }
+  .account-home .account-heading { animation-delay: 30ms; }
+  .account-home .account-score { animation-delay: 110ms; }
+  .account-home .account-actions button:nth-child(1) { animation-delay: 200ms; }
+  .account-home .account-actions button:nth-child(2) { animation-delay: 245ms; }
+  .account-home .account-actions button:nth-child(3) { animation-delay: 290ms; }
+  .account-home .account-actions button:nth-child(4) { animation-delay: 335ms; }
+  .account-home .account-section:nth-of-type(2) { animation-delay: 310ms; }
+  .account-home .account-trips { animation-delay: 390ms; }
+  .account-home .trip-row:nth-child(1) { animation-delay: 440ms; }
+  .account-home .trip-row:nth-child(2) { animation-delay: 490ms; }
+  .account-home .trip-row:nth-child(3) { animation-delay: 540ms; }
+  .account-home .account-score strong { display: inline-block; animation: score-arrive 650ms cubic-bezier(.22,1,.36,1) 150ms both; }
+  .account-home .account-actions button > span { transition: transform 180ms ease, box-shadow 180ms ease; }
+  .account-home .account-actions button:active > span { transform: scale(.94); }
+  @media (hover: hover) { .account-home .account-actions button:hover > span { transform: translateY(-3px); box-shadow: 0 6px 14px #163c2614; } }
+
+  /* Trips tab */
+  .tab-trips .page-title,
+  .tab-trips .summary-strip > div,
+  .tab-trips .driver-panel,
+  .tab-trips .trip-row,
+  .tab-trips .sample-footnote {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) both;
+  }
+  .tab-trips .page-title { animation-delay: 30ms; }
+  .tab-trips .summary-strip > div:nth-child(1) { animation-delay: 100ms; }
+  .tab-trips .summary-strip > div:nth-child(2) { animation-delay: 150ms; }
+  .tab-trips .summary-strip > div:nth-child(3) { animation-delay: 200ms; }
+  .tab-trips .driver-panel { animation-delay: 260ms; }
+  .tab-trips .trip-row:nth-child(1) { animation-delay: 320ms; }
+  .tab-trips .trip-row:nth-child(2) { animation-delay: 380ms; }
+  .tab-trips .trip-row:nth-child(3) { animation-delay: 440ms; }
+  .tab-trips .sample-footnote { animation-delay: 500ms; }
+
+  /* Insights tab */
+  .tab-insights .page-title,
+  .tab-insights .insights-score,
+  .tab-insights .insights-grid > .driver-panel:nth-child(2),
+  .tab-insights .factor,
+  .tab-insights .driver-section-title,
+  .tab-insights .coach-card,
+  .tab-insights .sample-footnote {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) both;
+  }
+  .tab-insights .page-title { animation-delay: 30ms; }
+  .tab-insights .insights-score { animation-delay: 110ms; }
+  .tab-insights .insights-grid > .driver-panel:nth-child(2) { animation-delay: 180ms; }
+  .tab-insights .factor:nth-child(1) { animation-delay: 230ms; }
+  .tab-insights .factor:nth-child(2) { animation-delay: 280ms; }
+  .tab-insights .factor:nth-child(3) { animation-delay: 330ms; }
+  .tab-insights .driver-section-title { animation-delay: 350ms; }
+  .tab-insights .coach-card:nth-child(1) { animation-delay: 390ms; }
+  .tab-insights .coach-card:nth-child(2) { animation-delay: 440ms; }
+  .tab-insights .coach-card:nth-child(3) { animation-delay: 490ms; }
+  .tab-insights .sample-footnote { animation-delay: 530ms; }
+
+  /* Profile tab */
+  .tab-profile .page-title,
+  .tab-profile .profile-card,
+  .tab-profile .profile-details,
+  .tab-profile .profile-details > div,
+  .tab-profile .sample-footnote {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) both;
+  }
+  .tab-profile .page-title { animation-delay: 30ms; }
+  .tab-profile .profile-card { animation-delay: 110ms; }
+  .tab-profile .profile-details { animation-delay: 190ms; }
+  .tab-profile .profile-details > div:nth-child(2) { animation-delay: 240ms; }
+  .tab-profile .profile-details > div:nth-child(3) { animation-delay: 290ms; }
+  .tab-profile .profile-details > div:nth-child(4) { animation-delay: 340ms; }
+  .tab-profile .sample-footnote { animation-delay: 400ms; }
+
+  /* TripDetail view */
+  .tab-detail .back-link,
+  .tab-detail .page-title,
+  .tab-detail .detail-card,
+  .tab-detail .summary-strip > div,
+  .tab-detail .sample-footnote {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) both;
+  }
+  .tab-detail .back-link { animation-delay: 20ms; }
+  .tab-detail .page-title { animation-delay: 60ms; }
+  .tab-detail .detail-card { animation-delay: 120ms; }
+  .tab-detail .summary-strip > div:nth-child(1) { animation-delay: 180ms; }
+  .tab-detail .summary-strip > div:nth-child(2) { animation-delay: 230ms; }
+  .tab-detail .summary-strip > div:nth-child(3) { animation-delay: 280ms; }
+  .tab-detail .sample-footnote { animation-delay: 340ms; }
+
+  /* Footer */
+  .driver-footer {
+    animation: home-arrive 560ms cubic-bezier(.22,1,.36,1) 480ms both;
+  }
+}
+
+@keyframes home-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes score-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

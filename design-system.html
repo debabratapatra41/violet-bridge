@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Violet Bridge — Design System Sample</title>
+  <link rel="stylesheet" href="./design-system.css" />
+</head>
+<body>
+  <main class="system-shell">
+    <header class="hero">
+      <p class="eyebrow">VIOLET BRIDGE</p>
+      <h1>Starter mobile design system</h1>
+      <p class="lede">A calm, high-clarity foundation for a mobile-first product that scales to tablet without losing focus.</p>
+    </header>
+
+    <section class="section" aria-labelledby="foundations-title">
+      <div class="section-heading"><p class="eyebrow">FOUNDATIONS</p><h2 id="foundations-title">Quiet contrast, clear hierarchy</h2></div>
+      <div class="foundation-grid">
+        <article class="panel"><p class="eyebrow">COLOR</p><h3>Palette</h3><p class="muted">Violet carries action, mint confirms progress, and warm amber calls attention without alarm.</p><div class="swatches"><span style="--swatch:#663DEB">Violet</span><span style="--swatch:#1CA77D">Mint</span><span style="--swatch:#E09A22">Amber</span><span style="--swatch:#FBFAFF">Canvas</span></div></article>
+        <article class="panel"><p class="eyebrow">TYPE</p><h3>Inter / readable by default</h3><p class="muted">Display 40 · Section 24 · Body 16 · Caption 12</p><p class="type-sample">Aa <span>Calm, clear, connected.</span></p></article>
+        <article class="panel"><p class="eyebrow">SPACING</p><h3>4px base rhythm</h3><div class="spacing-list"><span><i style="width:4px"></i>4</span><span><i style="width:8px"></i>8</span><span><i style="width:16px"></i>16</span><span><i style="width:24px"></i>24</span><span><i style="width:32px"></i>32</span></div></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="components-title">
+      <div class="section-heading"><p class="eyebrow">COMPONENTS</p><h2 id="components-title">Core building blocks</h2></div>
+      <div class="component-grid">
+        <article class="panel"><p class="eyebrow">ACTION</p><h3>Buttons</h3><div class="stack"><button class="button button-primary">Continue</button><button class="button button-secondary">Save for later</button><button class="button button-text">Skip for now</button></div></article>
+        <article class="panel"><p class="eyebrow">CONTENT</p><h3>Progress card</h3><div class="progress-card"><span class="eyebrow">UP NEXT</span><strong>Keep your momentum</strong><p>A little progress every day adds up.</p><div class="progress-track"><span></span></div><small>3 of 5 steps complete</small></div></article>
+        <article class="panel"><p class="eyebrow">NAVIGATION</p><h3>Adaptive tabs</h3><nav class="tabs" aria-label="Sample navigation"><a class="active" href="#devices">Home</a><a href="#components-title">Plans</a><a href="#foundations-title">Profile</a></nav></article>
+      </div>
+    </section>
+
+    <section class="section" id="devices" aria-labelledby="devices-title">
+      <div class="section-heading"><p class="eyebrow">RESPONSIVE REFERENCE</p><h2 id="devices-title">One system, two comfortable canvases</h2><p class="muted">Focused bottom navigation on iPhone; roomy split navigation on tablet.</p></div>
+      <div class="device-pair">
+        <article class="device device-phone"><p class="device-label">IPHONE 16</p><div class="screen"><div class="screen-header"><span>9:41</span><span>•••</span><h3>Good morning</h3><p>Your next step is ready</p></div><div class="screen-body"><div class="mobile-card"><span class="eyebrow">UP NEXT</span><strong>Keep your momentum</strong><p>A little progress every day adds up.</p><button class="button button-primary">Open plan</button></div><p class="list-label">Recent</p><div class="list-item"><span class="status-dot mint"></span>Design foundations</div><div class="list-item"><span class="status-dot amber"></span>First check-in</div></div><div class="device-nav"><span class="active">●<small>Home</small></span><span>●<small>Plans</small></span><span>●<small>Activity</small></span><span>●<small>Me</small></span></div></div></article>
+        <article class="device device-tablet"><p class="device-label">IPAD AIR</p><div class="screen"><div class="screen-header"><span>9:41</span><span>•••</span><h3>Good morning, Debabrata</h3><p>Your bridge is ready</p></div><div class="screen-body tablet-body"><aside class="sidebar"><span class="eyebrow">YOUR SPACE</span><a class="active" href="#devices">Overview</a><a href="#devices">Plans</a><a href="#devices">Activity</a></aside><div class="tablet-content"><h3>Today</h3><div class="tablet-card">A simple place to keep moving.</div><p class="list-label">Recent activity</p></div></div><div class="device-nav"><span class="active">●<small>Home</small></span><span>●<small>Plans</small></span><span>●<small>Activity</small></span><span>●<small>Me</small></span></div></div></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

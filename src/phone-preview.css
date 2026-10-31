@@ -1,0 +1,40 @@
+/* Desktop browser preview; the installed app remains full-screen on phones. */
+@media (min-width: 701px) {
+  body:has(.driver-app) { background: #e9eee5; display: flex; align-items: center; justify-content: center; min-height: 100dvh; }
+  .driver-app { position: relative; display: block; width: 402px; height: min(874px, calc(100dvh - 48px)); min-height: 0; border: 9px solid #202923; border-radius: 52px; overflow: hidden; box-shadow: 0 24px 70px #173c2626, 0 0 0 1px #8a978a; }
+  .driver-app::before { content: ''; position: absolute; z-index: 8; top: 11px; left: 50%; transform: translateX(-50%); width: 114px; height: 32px; background: #18201a; border-radius: 20px; pointer-events: none; }
+  .driver-sidebar { display: none; }
+  .driver-main { height: 100%; overflow-y: auto; scrollbar-width: none; }
+  .driver-main::-webkit-scrollbar { display: none; }
+  .driver-topbar { height: 54px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e5ebe0; box-sizing: border-box; position: relative; z-index: 5; }
+  .mobile-brand { display: flex; align-items: center; }
+  .mobile-brand .driver-logo { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; }
+  .topbar-context,.top-avatar,.demo-label { display: none; }
+  .topbar-actions { display: flex; align-items: center; gap: 8px; }
+  .driver-topbar .notification-button { width: 34px; height: 34px; border-radius: 50%; background: white; color: #234d2e; position: relative; display: grid; place-items: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .driver-topbar .notification-button span { position: absolute; top: 6px; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: #a6dd6a; border: 1.5px solid white; }
+  .driver-content { padding: 22px 18px 110px; }
+  .welcome { align-items: start; }.date-chip { display: none; }
+  .welcome h1,.page-title h1 { font-size: 30px; }
+  .overview-grid,.content-grid,.insights-grid,.coaching-grid { grid-template-columns: 1fr; }
+  .score-card { min-height: 220px; padding: 24px 20px; }.score-card h2 { font-size: 25px; margin-top: 18px; }
+  .score-ring { width: 125px; }.score-ring>div { width: calc(100% - 16px); height: calc(100% - 16px); }.score-ring strong { font-size: 40px; }.score-ring--small { width: 110px; }
+  .week-card,.driver-panel { padding: 22px; border-radius: 20px; }
+  .summary-strip { gap: 8px; }.summary-strip>div { padding: 16px 12px; }.summary-strip strong { font-size: 19px; }.summary-strip span { font-size: 8px; }
+  .driver-bottom-nav { position: absolute; z-index: 5; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-around; padding: 8px 12px 18px; background: #fff; border-top: 1px solid #e4eadf; }
+  .driver-bottom-nav button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 60px; min-height: 48px; border: 0; background: transparent; color: #809181; font-size: 10px; }
+  .driver-bottom-nav button.is-active { color: #256b36; font-weight: 700; }
+}
+
+/* Compact floating dock opens slightly while scrolling, then settles. */
+@media (max-width: 700px), (min-width: 701px) {
+  .driver-bottom-nav { left: 50%; right: auto; bottom: calc(16px + env(safe-area-inset-bottom)); transform: translateX(-50%); display: flex; justify-content: center; gap: 2px; width: max-content; padding: 6px; border: 1px solid #dfe9da; border-radius: 999px; background: rgba(255,255,255,.96); box-shadow: 0 8px 26px #173c2624; transition: gap .28s ease, padding .28s ease, box-shadow .28s ease; }
+  .driver-bottom-nav button { flex: none; width: 48px; min-width: 48px; height: 48px; min-height: 48px; padding: 0; border-radius: 50%; transition: background .22s ease, transform .28s ease; }
+  .driver-bottom-nav button span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .driver-bottom-nav button.is-active { background: #b4ed75; color: #153d25; }
+  .driver-bottom-nav { gap: 9px; padding: 8px; box-shadow: 0 12px 30px #173c2630; }
+  .driver-bottom-nav button { transform: scale(1.04); }
+  .driver-bottom-nav.is-scrolling { gap: 2px; padding: 6px; box-shadow: 0 8px 26px #173c2624; }
+  .driver-bottom-nav.is-scrolling button { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) { .driver-bottom-nav,.driver-bottom-nav button { transition: none; } .driver-bottom-nav.is-scrolling { gap: 9px; padding: 8px; } .driver-bottom-nav.is-scrolling button { transform: scale(1.04); } }
